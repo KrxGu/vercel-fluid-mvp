@@ -1,0 +1,29 @@
+{
+  "name": "vercel-fluid-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "verify": "node scripts/verify-redis.js",
+    "test": "node scripts/test-coalescing.js http://localhost:3000 50",
+    "test:optimized": "node scripts/optimized-test.js",
+    "test:quick": "node scripts/test-coalescing.js http://localhost:3000 10"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.28.0",
+    "dotenv": "^17.2.3",
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "19.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5.4.3"
+  }
+}
