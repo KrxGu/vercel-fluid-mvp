@@ -30,6 +30,34 @@ export default function HomePage() {
         two endpoints with a load generator such as{" "}
         <code>npx autocannon</code> running against the same query string.
       </p>
+      
+      <hr style={{ margin: "2rem 0", border: "none", borderTop: "1px solid #ddd" }} />
+      
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+        <h2 style={{ fontSize: "1.25rem", margin: "0 0 0.5rem 0" }}>Links</h2>
+        <div>
+          <strong>Live Demo:</strong>{" "}
+          <a 
+            href="https://vercel-fluid-mvp.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: "#0070f3", textDecoration: "none" }}
+          >
+            vercel-fluid-mvp.vercel.app
+          </a>
+        </div>
+        <div>
+          <strong>GitHub Repository:</strong>{" "}
+          <a 
+            href="https://github.com/KrxGu/vercel-fluid-mvp" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: "#0070f3", textDecoration: "none" }}
+          >
+            github.com/KrxGu/vercel-fluid-mvp
+          </a>
+        </div>
+      </div>
     </main>
   );
 }
